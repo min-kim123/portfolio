@@ -6,11 +6,11 @@ import { Link } from "react-router-dom";
 
 const projects = [
   {
-    title: "Electric Guitar",
+    title: "Electric Guitar (Telecaster)",
     description:
       "Played a lot in high school & wanted to get back into it so I decided to make one! Made from scratch, including the pickups.",
     link: "/electric-guitar",
-    picture: advocareImg,
+    picture: "",
     guide: true,
     ware: "hardware",
   },
@@ -18,7 +18,7 @@ const projects = [
     title: "Amplifier",
     description: "Needed an amp for the electric guitar.",
     link: "/amplifier",
-    picture: netlypicImg,
+    picture: "",
     guide: false,
     ware: "hardware",
   },
@@ -27,7 +27,7 @@ const projects = [
     description:
       "Needed a way to wind copper coil thousands of times for the pickups.",
     link: "/pickup-winder",
-    picture: memtilesImg,
+    picture: "",
     guide: true,
     ware: "hardware",
   },
@@ -63,7 +63,7 @@ export default function Projects() {
   return (
     <>
       <div>
-        <div className="mx-6 mt-8">
+        <div className="mx-6 mt-4">
           <h1 className="text-3xl mb-2 text-left">Latest Projects</h1>
           <div className="divide-y divide-gray-300">
             {projects.map((project, index) => (

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
-    <nav className="p-4 flex justify-between items-center">
+    <nav className="py-4 px-6 pb-8 flex justify-between items-center">
       <Link to="/" className="text-xl hover:text-gray-600 transition">
         Min Kim
       </Link>

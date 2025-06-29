@@ -9,7 +9,7 @@ export default function Footer() {
           href="https://www.linkedin.com/in/153minkim/"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-black hover:text-gray-600 text-xl transition-colors"
+          className="text-gray-500 hover:text-gray-600 text-xl transition-colors"
         >
           <FaLinkedin />
         </a>
