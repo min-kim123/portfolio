@@ -58,7 +58,7 @@ export default function Projects() {
     <>
       <div>
         <div className="mx-6 mt-8">
-          <h1 className="text-3xl mb-8">Latest Projects</h1>
+          <h1 className="text-3xl mb-2 text-left">Latest Projects</h1>
           <div className="divide-y divide-gray-300">
             {projects.map((project, index) => (
               <div key={index}>

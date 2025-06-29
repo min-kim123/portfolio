@@ -7,6 +7,9 @@ import Projects from "./pages/Projects";
 import Manufacturing from "./pages/Manufacturing";
 import HomePage from "./pages/HomePage";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import ElectricGuitar from "./pages/ElectricGuitar";
+import PickupWinder from "./pages/PickupWinder";
+
 
 function App() {
   return (
@@ -16,6 +19,8 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/manufacturing" element={<Manufacturing />} />
+        <Route path="/electric-guitar" element={<ElectricGuitar />} />
+        <Route path="/pickup-winder" element={<PickupWinder />} />
       </Routes>
     </Router>
   );

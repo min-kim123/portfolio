@@ -7,6 +7,7 @@ const experiences = [
   {
     image: "",
     company: "USC Baum Family Makerspace",
+    role: "Machinist",
     start: "May 2025",
     end: "Present",
     description: "",
@@ -14,25 +15,27 @@ const experiences = [
   {
     image: "aspen",
     company: "Advanced Spacecraft Propulsion and Energy Laboratory",
+    role: "Researcher",
     start: "May 2025",
     end: "Present",
     description: "",
   },
   {
     image: "",
-    company: "Formula Electric",
+    company: "Formula SAE Electric",
+    role: "Team Member",
     start: "May 2025",
     end: "Present",
-    description: "",
+    description: ["Performed Finite Element Analysis in NX to validate drivetrain components, ensuring stresses remained within acceptable Factor of Safety limits", "", ""],
   },
   {
     image: "",
-    company: "Formula Electric",
+    company: "SEP @ USC",
+    role: "Cohort Member",
     start: "May 2025",
     end: "Present",
     description: "",
   },
-
 ];
 
 export default function HomePage() {
@@ -62,6 +65,7 @@ export default function HomePage() {
               <ExpCard
                 image={experience.image}
                 company={experience.company}
+                role={experience.role}
                 start={experience.start}
                 end={experience.end}
                 description={experience.description}
