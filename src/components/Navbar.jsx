@@ -20,6 +20,7 @@ export default function Navbar() {
         >
           Manufacturing
         </Link>
+        
       </div>
     </nav>
   );

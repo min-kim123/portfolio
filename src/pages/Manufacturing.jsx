@@ -1,4 +1,5 @@
 import ManCard from "../components/ManCard";
+import stop_plates from "../assets/machining/stop_plates.png"
 
 const parts = [
   {
@@ -13,7 +14,7 @@ const parts = [
   },
   {
     name: "Vise Jaw Stop Plates",
-    image: "",
+    image: stop_plates,
     description: "",
   },
 ];

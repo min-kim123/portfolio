@@ -8,25 +8,28 @@ const projects = [
   {
     title: "Electric Guitar",
     description:
-      "Platform to connect patients with the best match medical bill advocate who can get their bills lowered. ",
+      "Played a lot in high school & wanted to get back into it so I decided to make one! Made from scratch, including the pickups.",
     link: "/electric-guitar",
     picture: advocareImg,
     guide: true,
+    ware: "hardware",
   },
   {
     title: "Amplifier",
-    description:
-      "Social media for college clubs. Schedule coffee chats, apply to clubs, share fun events.",
+    description: "Needed an amp for the electric guitar.",
     link: "/amplifier",
     picture: netlypicImg,
     guide: false,
+    ware: "hardware",
   },
   {
     title: "Electric Guitar Pickup Winder",
-    description: "Fun little memory game!",
+    description:
+      "Needed a way to wind copper coil thousands of times for the pickups.",
     link: "/pickup-winder",
     picture: memtilesImg,
     guide: true,
+    ware: "hardware",
   },
   {
     title: "Advocare",
@@ -35,13 +38,15 @@ const projects = [
     link: "/advocare",
     picture: netlypicImg,
     guide: false,
+    ware: "software",
   },
   {
     title: "Netly",
     description: "Fun little memory game!",
     link: "/netly",
     picture: memtilesImg,
-    guide: true,
+    guide: false,
+    ware: "software",
   },
   {
     title: "Memory Tiles",
@@ -50,6 +55,7 @@ const projects = [
     link: "/memtiles",
     picture: advocareImg,
     guide: false,
+    ware: "software",
   },
 ];
 
@@ -70,6 +76,7 @@ export default function Projects() {
                   link={project.link}
                   picture={project.picture}
                   guide={project.guide}
+                  ware={project.ware}
                 />
               </div>
             ))}

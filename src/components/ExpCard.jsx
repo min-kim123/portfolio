@@ -5,7 +5,7 @@ export default function ExpCard({ image, company, role, start, end, description 
         {/* Image */}
         <img
           src={image}
-          className="w-full md:w-1/6 h-48 object-cover rounded-md"
+          className="w-12 h-12 object-cover rounded-md"
         />
 
         {/* Text */}

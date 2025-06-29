@@ -9,6 +9,7 @@ import HomePage from "./pages/HomePage";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ElectricGuitar from "./pages/ElectricGuitar";
 import PickupWinder from "./pages/PickupWinder";
+import Footer from "./components/Footer";
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
         <Route path="/electric-guitar" element={<ElectricGuitar />} />
         <Route path="/pickup-winder" element={<PickupWinder />} />
       </Routes>
+      <Footer />
     </Router>
   );
 }

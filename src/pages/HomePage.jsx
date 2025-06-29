@@ -1,11 +1,14 @@
 import myPhoto from "../assets/pic.png";
 import ExpCard from "../components/ExpCard";
+import usc from "../assets/logos/usc.png"
+import sep from "../assets/logos/sep.png"
+import fe from "../assets/logos/fe.png"
 import aspen from "../assets/aspen.png";
 import { Link } from "react-router-dom";
 
 const experiences = [
   {
-    image: "",
+    image: usc,
     company: "USC Baum Family Makerspace",
     role: "Machinist",
     start: "May 2025",
@@ -13,7 +16,7 @@ const experiences = [
     description: "",
   },
   {
-    image: "aspen",
+    image: aspen,
     company: "Advanced Spacecraft Propulsion and Energy Laboratory",
     role: "Researcher",
     start: "May 2025",
@@ -21,18 +24,18 @@ const experiences = [
     description: "",
   },
   {
-    image: "",
+    image: fe,
     company: "Formula SAE Electric",
-    role: "Team Member",
-    start: "May 2025",
+    role: "Engineer",
+    start: "Aug 2024",
     end: "Present",
     description: ["Performed Finite Element Analysis in NX to validate drivetrain components, ensuring stresses remained within acceptable Factor of Safety limits", "", ""],
   },
   {
-    image: "",
+    image: sep,
     company: "SEP @ USC",
     role: "Cohort Member",
-    start: "May 2025",
+    start: "Aug 2024",
     end: "Present",
     description: "",
   },
