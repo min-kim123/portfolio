@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const projects = [
   {
-    title: "Electric Guitar (Telecaster)",
+    title: "Electric Guitar",
     description:
       "Played a lot in high school & wanted to get back into it so I decided to make one! Made from scratch, including the pickups.",
     link: "/electric-guitar",

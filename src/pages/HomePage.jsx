@@ -18,14 +18,6 @@ const experiences = [
     description: "Manufactured precision parts for the machine shop and USC FSAE using Bridgeport mills, including vise jaws, inboard brackets, clamps, and vise jaw stop plates. Used micrometers, test indicators, and edge finders to ensure precision in the thousandths",
   },
   {
-    image: aspen,
-    company: "Advanced Spacecraft Propulsion and Energy Laboratory",
-    role: "Researcher",
-    start: "May 2025",
-    end: "Present",
-    description: "",
-  },
-  {
     image: fe,
     company: "Formula SAE Electric",
     role: "Engineer",
@@ -36,7 +28,7 @@ const experiences = [
   {
     image: sep,
     company: "SEP @ USC",
-    role: "Cohort Member",
+    role: "Software & Product Engineer",
     start: "Aug 2024",
     end: "Present",
     description: "",
