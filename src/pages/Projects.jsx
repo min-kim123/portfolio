@@ -1,24 +1,28 @@
 import ProjectCard from "../components/ProjectCard";
+import { Link } from "react-router-dom";
 import advocareImg from "../assets/advocare.png";
 import netlypicImg from "../assets/netlypic.png";
 import memtilesImg from "../assets/memtiles.png";
-import { Link } from "react-router-dom";
+import guitar from "../assets/guitar1.jpeg";
+import pcb from "../assets/pcb1.png";
+import schematic from "../assets/schematic.png";
+import pickupwinder from "../assets/pickupwinder.png";
 
 const projects = [
   {
     title: "Electric Guitar",
     description:
-      "Played a lot in high school & wanted to get back into it so I decided to make one!.",
+      "Played a lot in high school & wanted to get back into it so I decided to make one!",
     link: "/electric-guitar",
-    picture: "",
+    picture: guitar,
     guide: true,
     ware: "hardware",
   },
   {
     title: "Amplifier",
-    description: "Made an electric guitar amp!",
-    link: "/amplifier",
-    picture: "",
+    description: "Currently building an electric guitar amp!",
+    link: "/amp",
+    picture: pcb,
     guide: false,
     ware: "hardware",
   },
@@ -27,7 +31,7 @@ const projects = [
     description:
       "Needed a way to wind copper coil thousands of times for the pickups.",
     link: "/pickup-winder",
-    picture: "",
+    picture: pickupwinder,
     guide: true,
     ware: "hardware",
   },
@@ -35,15 +39,16 @@ const projects = [
     title: "Netly",
     description:
       "Social media for college clubs. Schedule coffee chats, apply to clubs, share fun events.",
-    link: "/advocare",
+    link: "/netly",
     picture: netlypicImg,
     guide: false,
     ware: "software",
   },
   {
     title: "Memory Tiles",
-    description: "My first ever CS personal project! See what level you can get to:)",
-    link: "/netly",
+    description:
+      "My first ever CS personal project! See what level you can get to:)",
+    link: "/memtiles",
     picture: memtilesImg,
     guide: false,
     ware: "software",

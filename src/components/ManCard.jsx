@@ -1,17 +1,11 @@
 export default function ManCard({ name, image, description }) {
   return (
-    <div className="py-6">
-      <div className="flex flex-col md:flex-row gap-4 transform transition duration-200 ">
-        {/* Image */}
-        <img
-          src={image}
-          className="w-full md:w-2/5 h-48 object-cover rounded-md"
-        />
-
-        {/* Text */}
-        <div className="flex-1 text-left">
-          <h2 className="text-xl mb-1">{name}</h2>
-          <p className="text-gray-600 mb-2">{description}</p>
+    <div className="py-4">
+      <div className="flex flex-col gap-2 transform transition duration-200">
+        <img src={image} className="w-full h-48 object-cover rounded-md" />
+        <div className="text-left">
+          <h2 className="text-lg mb-1">{name}</h2>
+          <p className="text-gray-600">{description}</p>
         </div>
       </div>
     </div>

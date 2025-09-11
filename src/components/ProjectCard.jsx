@@ -16,7 +16,7 @@ export default function ProjectCard({
           <img
             src={picture}
             alt={title}
-            className="w-full md:w-1/3 h-48 object-cover rounded-md"
+            className="w-full md:w-[29%] h-48 object-cover object-center rounded-md"
           />
 
           {/* Text */}

@@ -10,6 +10,9 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ElectricGuitar from "./pages/ElectricGuitar";
 import PickupWinder from "./pages/PickupWinder";
 import Footer from "./components/Footer";
+import Memtiles from "./pages/Memtiles";
+import Netly from "./pages/Netly";
+import Amplifier from "./pages/Amplifier";
 
 
 function App() {
@@ -22,6 +25,12 @@ function App() {
         <Route path="/manufacturing" element={<Manufacturing />} />
         <Route path="/electric-guitar" element={<ElectricGuitar />} />
         <Route path="/pickup-winder" element={<PickupWinder />} />
+        <Route path="/memtiles" element={<Memtiles />} />
+        <Route path="/netly" element={<Netly />} />
+        <Route path="/amp" element={<Amplifier />} />
+
+
+
       </Routes>
       <Footer />
     </Router>
