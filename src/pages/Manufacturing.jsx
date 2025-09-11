@@ -1,12 +1,14 @@
 import ManCard from "../components/ManCard";
 import stop_plates from "../assets/machining/stop_plates.png";
 import inboard from "../assets/machining/inboard.png";
+import weldcups from "../assets/machining/weldcups.jpeg";
+
 
 const parts = [
   {
     name: "Inboard Brackets",
     image: inboard,
-    description: "For USC's Formula SAE team—did three at once!",
+    description: "For USC Racing—made three at once!",
   },
   {
     name: "Vise Jaw",
@@ -17,6 +19,11 @@ const parts = [
     name: "Vise Jaw Stop Plates",
     image: stop_plates,
     description: "",
+  },
+  {
+    name: "Weld Cups",
+    image: stop_plates,
+    description: "For the Formula SAE Electric & USC Racing—made 40 of these",
   },
 ];
 

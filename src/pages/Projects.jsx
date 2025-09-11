@@ -8,7 +8,7 @@ const projects = [
   {
     title: "Electric Guitar",
     description:
-      "Played a lot in high school & wanted to get back into it so I decided to make one! Made from scratch, including the pickups.",
+      "Played a lot in high school & wanted to get back into it so I decided to make one!.",
     link: "/electric-guitar",
     picture: "",
     guide: true,
@@ -16,7 +16,7 @@ const projects = [
   },
   {
     title: "Amplifier",
-    description: "Needed an amp for the electric guitar.",
+    description: "Made an electric guitar amp!",
     link: "/amplifier",
     picture: "",
     guide: false,
@@ -32,7 +32,7 @@ const projects = [
     ware: "hardware",
   },
   {
-    title: "Advocare",
+    title: "Netly",
     description:
       "Social media for college clubs. Schedule coffee chats, apply to clubs, share fun events.",
     link: "/advocare",
@@ -41,15 +41,15 @@ const projects = [
     ware: "software",
   },
   {
-    title: "Netly",
-    description: "Fun little memory game!",
+    title: "Memory Tiles",
+    description: "My first ever CS personal project! See what level you can get to:)",
     link: "/netly",
     picture: memtilesImg,
     guide: false,
     ware: "software",
   },
   {
-    title: "Memory Tiles",
+    title: "Advocare",
     description:
       "Platform to connect patients with the best match medical bill advocate who can get their bills lowered. ",
     link: "/memtiles",

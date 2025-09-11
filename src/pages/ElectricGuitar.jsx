@@ -30,12 +30,15 @@ import frets from "../assets/guitar/frets.jpg";
 import neckholes from "../assets/guitar/neckholes.jpeg";
 import platehole from "../assets/guitar/platehole.jpeg";
 import neckplateholes from "../assets/guitar/neckplateholes.jpeg";
+import copper from "../assets/guitar/copper.jpg";
+import electronics from "../assets/guitar/electronics.jpeg";
+import solder from "../assets/guitar/solder.jpeg";
 
 // Sidebar section titles
 const sections = [
   { id: "reflections", label: "Reflections" },
   { id: "overview", label: "Overview" },
-  { id: "woodworking", label: "Woodworking & CAD" },
+  { id: "woodworking", label: "Woodworking" },
   { id: "pickups", label: "Pickups" },
   { id: "electronics", label: "Electronics" },
   { id: "finishing", label: "Finishing" },
@@ -113,24 +116,29 @@ const woodworkingSteps = [
     text: "I cut out the shape i wanted for the cavity. I made it longer than necessary so that I would have less trouble drilling the pathway from the neck pocket all the way to the electronics cavity. I then imported the image into NX, sketched the shape in CAD, created another smaller drawing for the actual deep cavity with places for the screws. I then laser cut the templates, routed out both templates, and also used forstner bits to drill out the spots where the pots and the switch went. The hole on the far left was made to unearth the pathway from the neck pocket, through the neck pickup, and to the electronics cavity, since I drilled it a bit too deep. (I also messed up on drilling the bigger holes for the neck ferrules in the back, so I created a maple insert and redid it. ",
   },
   {
-    title: "Output jack hole",
+    title: "Output jack",
     images: [platehole],
-    text: "Use a forstner bit to drill a hole for your output jack",
+    text: "Use a forstner bit to drill a hole for your output jack. ",
+  },
+  {
+    title: "Install Pickups",
+    images: [],
+    text: "Before installing the neck, you must install the bridge so that you know how to position the neck so that the strings line up correctly along the pickup magnets and the neck. And before installing the bridge the bridge pickup must go in. If you want to make your pickups have adjustable height, place springs underneath the bottom acrylic when screwing them in.",
+  },
+  {
+    title: "Install Bridge",
+    images: [],
+    text: "I got size 8 1/14'' flathead Phillips screws to install the bridge. I drilled smaller holes first, then screwed in the screws. NOTE: you need to have a wire beneath the bridge that goes into the electronics cavity. This grounds your guitar. This will later get soldred to the back of one of your pots.",
   },
   {
     title: "Neck plate holes",
     images: [neckplateholes],
-    text: "Now we start thinking about attaching the neck onto the body. You can either use wood screws or you can use insert nuts with regular screws.",
+    text: "Now we start thinking about attaching the neck onto the body. Place the neck plate on the back of the body and mark the centers of the circles.You can either use wood screws or you can use insert nuts with regular screws. For the holes in the body, they will be clearance holes where the screws will pass without catching on the wood. Measure the threaded part of your screws with a caliper, then drill holes slightly bigger than that diameter. Try to make holes that allow for wood screws to slide in easily but not move around. This will help a lot for marking precisely where to drill the neck holes so that they actually align with the holes in the body.",
   },
   {
-    title: "",
-    images: [],
-    text: "",
-  },
-  {
-    title: "",
-    images: [],
-    text: "",
+    title: "Neck holes",
+    images: [angle, hole, insertnuts],
+    text: "I decided to use insert nuts so that I could take the neck off without having to worry about stripping the wood. I used a digital angle guage to make sure I wasn't drilling holes at an angle, checking both axes.",
   },
   {
     title: "",
@@ -144,7 +152,7 @@ const pickupSteps = [
   {
     title: "Design Pickup Bobbins in CAD",
     images: [pickupcad],
-    text: "I used acrylic sheets for the bobbin top and bottom and laser cut them to match my CAD design.",
+    text: "I used acrylic sheets for the bobbin top and bottom and laser cut them to match my CAD design. To make sure that my strings aligned with the centers of the magnets, I placed a long ruler with one end at the center of the bridge saddle and the other at the same string nut, marked that position, did so on another string saddle/nut position, then calculated the distance I should have between the magnets of my pickups.",
   },
   {
     title: "Wrap magnets in Kapton tape",
@@ -152,12 +160,12 @@ const pickupSteps = [
     text: "Wrap the magnets in kapton tape to prevent it from corroding the thin copper wire that will be wrapped around them.",
   },
   {
-    title: "Design k Bobbins in CAD",
+    title: "Wind & Solder",
     images: [pickups],
-    text: "I used acrylic sheets for the bobbin top and bottom and laser cut them to match my CAD design.",
+    text: "Step by step tutorial is on my pickup winder tutorial page.",
   },
   {
-    title: "Design Pickup Bobbins in CAD",
+    title: "Magnetize",
     images: [magnets],
     text: "I taped the neodymium bar magnets to blocks of food then passed the pickups through them. I just played a youtube video of the same process and copied how they passed the magnets through.",
   },
@@ -166,24 +174,28 @@ const pickupSteps = [
 // Pickups steps
 const electronicsSteps = [
   {
-    title: "Design Pickup Bobbins in CAD",
-    images: [pickupcad],
-    text: "I used acrylic sheets for the bobbin top and bottom and laser cut them to match my CAD design.",
+    title: "Cover the electronics cavity with copper tape",
+    images: [copper],
+    text: "We want to shield the electronics with a faraday cage so that electromagnetic noise from nearby electronics and devices. Make sure that the copper is continuous—they must be all connected together for this to work. Gaps let high frequency noise in. ",
   },
   {
-    title: "Design Pickup Bobbins in CAD",
-    images: [kapton],
-    text: "I used acrylic sheets for the bobbin top and bottom and laser cut them to match my CAD design.",
+    title: "Install output jack",
+    images: [plate],
+    text: "Solder the wires onto your output jack, place it in the cavity, then install the output jack palte. Use two pliers to bend the plate to the radius that matches your guitar. Screw them in. I didn't drill smaller holes before doing this and it was fine.",
   },
   {
-    title: "Design Pickup Bobbins in CAD",
-    images: [pickups],
-    text: "I used acrylic sheets for the bobbin top and bottom and laser cut them to match my CAD design.",
+    title: "Attach wires to components",
+    images: [solder],
+    text: "I followed this website's instructions for wiring an electric guitar: ",
+    link: {
+      url: "https://sixstringsupplies.co.uk/pages/telecaster-wiring?srsltid=AfmBOop0yeSBzusikUm2DydEdNerhBsBA6nsly741F8FKBl3y9IRjc3i",
+      text: "Telecaster wiring guide",
+    },
   },
   {
-    title: "Design Pickup Bobbins in CAD",
-    images: [magnets],
-    text: "I used acrylic sheets for the bobbin top and bottom and laser cut them to match my CAD design.",
+    title: "Result",
+    images: [electronics],
+    text: "This is how mine turned out! Make sure you cover the underside of the plate with copper tape as well.",
   },
 ];
 
@@ -218,20 +230,37 @@ const overview = {
   tools: ["Rasp", "Chisel", "Router", "Band Saw", "Shaper", "Orbital Sander"],
 };
 
-function Step({ title, images = [], text }) {
+function Step({ title, images = [], text, link, index }) {
   return (
-    <li>
-      <div className="mb-2">{title}</div>
-      <div className="flex gap-4 mb-2 flex-wrap">
-        {images.map((src, idx) => (
-          <img
-            key={idx}
-            src={src}
-            className="w-full md:w-1/3 h-48 object-cover rounded-sm"
-          />
-        ))}
+    <li className="flex items-start gap-3">
+      <span className="font-bold text-lg min-w-[2rem]">{index + 1}.</span>
+      <div className="flex-1">
+        <div className="mb-2 font-bold">{title}</div>
+        <div className="flex gap-4 mb-2 flex-wrap">
+          {images.map((src, idx) => (
+            <img
+              key={idx}
+              src={src}
+              className="w-full md:w-1/3 h-48 object-cover rounded-sm"
+            />
+          ))}
+        </div>
+        {text && (
+          <p>
+            {text}
+            {link && (
+              <a
+                href={link.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 hover:text-blue-800 underline ml-1"
+              >
+                {link.text}
+              </a>
+            )}
+          </p>
+        )}
       </div>
-      {text && <p>{text}</p>}
     </li>
   );
 }
@@ -274,30 +303,17 @@ export default function ElectricGuitar() {
           {/* Reflections */}
           <section id="reflections" className="section-anchor">
             <h2 className="text-2xl mb-2">Reflections & Lessons Learned</h2>
-            <p className="mb-4">
-              Building this electric guitar was an incredible journey that
-              taught me so much about craftsmanship, patience, and the beauty of
-              creating something from scratch. Here are some key takeaways and
-              reflections from the process.
-            </p>
+            <p className="mb-4"></p>
             <div className="space-y-4">
               <div>
-                <h3 className="text-lg font-semibold mb-2">Biggest Challenges I Faced</h3>
+                <h3 className="text-lg font-semibold mb-2">
+                  Biggest Challenges I Faced
+                </h3>
                 <ul className="list-disc list-inside space-y-1 ml-4">
-                  <li>
-                    The importance of precise measurements and planning in
-                    woodworking
-                  </li>
-                  <li>
-                    How CAD can bridge the gap between design and execution
-                  </li>
-                  <li>
-                    The patience required for proper glue drying and finishing
-                  </li>
-                  <li>
-                    Why tool quality and sharpness matters more than I initially
-                    thought
-                  </li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
                 </ul>
               </div>
               <div>
@@ -328,10 +344,7 @@ export default function ElectricGuitar() {
                   What I'd Do Differently
                 </h3>
                 <ul className="list-disc list-inside space-y-1 ml-4">
-                  <li>Invest in better quality router bits from the start</li>
-                  <li>Create more detailed templates before cutting</li>
-                  <li>Take more progress photos throughout the build</li>
-                  <li>Test electronics before final assembly</li>
+                  <li></li>
                 </ul>
               </div>
             </div>
@@ -357,12 +370,12 @@ export default function ElectricGuitar() {
             <hr className="my-6" />
           </section>
 
-          {/* Woodworking & CAD */}
+          {/* Woodworking */}
           <section id="woodworking" className="section-anchor">
-            <h2 className="text-2xl mb-2">Woodworking & CAD</h2>
-            <ol className="list-decimal list-inside space-y-6">
+            <h2 className="text-2xl mb-2">Woodworking</h2>
+            <ol className="list-none space-y-6">
               {woodworkingSteps.map((step, i) => (
-                <Step key={i} {...step} />
+                <Step key={i} {...step} index={i} />
               ))}
             </ol>
             <hr className="my-6" />
@@ -371,9 +384,9 @@ export default function ElectricGuitar() {
           {/* Pickups */}
           <section id="pickups" className="section-anchor">
             <h2 className="text-2xl mb-2">Pickups</h2>
-            <ol className="list-decimal list-inside space-y-6">
+            <ol className="list-none space-y-6">
               {pickupSteps.map((step, i) => (
-                <Step key={i} {...step} />
+                <Step key={i} {...step} index={i} />
               ))}
             </ol>
             <hr className="my-6" />
@@ -382,9 +395,9 @@ export default function ElectricGuitar() {
           {/* Electronics */}
           <section id="electronics" className="section-anchor">
             <h2 className="text-2xl mb-2">Electronics</h2>
-            <ol className="list-decimal list-inside space-y-6">
+            <ol className="list-none space-y-6">
               {electronicsSteps.map((step, i) => (
-                <Step key={i} {...step} />
+                <Step key={i} {...step} index={i} />
               ))}
             </ol>
             <hr className="my-6" />
