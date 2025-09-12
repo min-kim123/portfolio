@@ -14,7 +14,6 @@ import Memtiles from "./pages/Memtiles";
 import Netly from "./pages/Netly";
 import Amplifier from "./pages/Amplifier";
 
-
 function App() {
   return (
     <Router>
@@ -28,9 +27,6 @@ function App() {
         <Route path="/memtiles" element={<Memtiles />} />
         <Route path="/netly" element={<Netly />} />
         <Route path="/amp" element={<Amplifier />} />
-
-
-
       </Routes>
       <Footer />
     </Router>

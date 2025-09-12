@@ -5,7 +5,7 @@ import netlypicImg from "../assets/netlypic.png";
 import memtilesImg from "../assets/memtiles.png";
 import guitar from "../assets/guitar1.jpeg";
 import pcb from "../assets/pcb1.png";
-import schematic from "../assets/schematic.png";
+// import schematic from "../assets/schematic.png";
 import pickupwinder from "../assets/pickupwinder.png";
 
 const projects = [

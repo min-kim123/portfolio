@@ -1,4 +1,8 @@
 import React from "react";
+import pickupcad from "../assets/guitar/pickupcad.jpg";
+import kapton from "../assets/guitar/kapton.jpg";
+import pickups from "../assets/guitar/pickups.jpg";
+import magnets from "../assets/guitar/magnets.jpg";
 
 // Sidebar section titles
 const sections = [
@@ -8,6 +12,30 @@ const sections = [
   { id: "machining", label: "Machining" },
   { id: "electronics", label: "Electronics" },
   { id: "testing", label: "Testing & Calibration" },
+];
+
+// Pickups steps
+const pickupSteps = [
+  {
+    title: "Design Pickup Bobbins in CAD",
+    images: [pickupcad],
+    text: "I used acrylic sheets for the bobbin top and bottom and laser cut them to match my CAD design. To make sure that my strings aligned with the centers of the magnets, I placed a long ruler with one end at the center of the bridge saddle and the other at the same string nut, marked that position, did so on another string saddle/nut position, then calculated the distance I should have between the magnets of my pickups.",
+  },
+  {
+    title: "Wrap magnets in Kapton tape",
+    images: [kapton],
+    text: "Wrap the magnets in kapton tape to prevent it from corroding the thin copper wire that will be wrapped around them.",
+  },
+  {
+    title: "Wind & Solder",
+    images: [pickups],
+    text: "Step by step tutorial is on my pickup winder tutorial page.",
+  },
+  {
+    title: "Magnetize",
+    images: [magnets],
+    text: "I taped the neodymium bar magnets to blocks of food then passed the pickups through them. I just played a youtube video of the same process and copied how they passed the magnets through.",
+  },
 ];
 
 // Overview content - customize these arrays with your own materials and tools

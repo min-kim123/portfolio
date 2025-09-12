@@ -1,4 +1,4 @@
-export default function Memtiles() {
+export default function Netly() {
   return (
     <div>
       <div className="mx-6 mt-4">

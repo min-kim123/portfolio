@@ -1,9 +1,9 @@
 import myPhoto from "../assets/pic.png";
 import ExpCard from "../components/ExpCard";
-import usc from "../assets/logos/usc.png"
-import sep from "../assets/logos/sep.png"
-import fe from "../assets/logos/fe.png"
-import aspen from "../assets/logos/aspen.png";
+import usc from "../assets/logos/usc.png";
+import sep from "../assets/logos/sep.png";
+import fe from "../assets/logos/fe.png";
+// import aspen from "../assets/logos/aspen.png";
 import nyu from "../assets/logos/nyu.png";
 
 import { Link } from "react-router-dom";
@@ -15,7 +15,8 @@ const experiences = [
     role: "Machinist",
     start: "May 2025",
     end: "Present",
-    description: "Manufactured precision parts for the machine shop and USC FSAE using Bridgeport mills, including vise jaws, inboard brackets, clamps, and vise jaw stop plates. Used micrometers, test indicators, and edge finders to ensure precision in the thousandths",
+    description:
+      "Manufactured precision parts for the machine shop and USC FSAE using Bridgeport mills, including vise jaws, inboard brackets, clamps, and vise jaw stop plates. Used micrometers, test indicators, and edge finders to ensure precision in the thousandths",
   },
   {
     image: fe,
@@ -23,7 +24,11 @@ const experiences = [
     role: "Engineer",
     start: "Aug 2024",
     end: "Present",
-    description: ["Performed Finite Element Analysis in NX to validate drivetrain components, ensuring stresses remained within acceptable Factor of Safety limits", "", ""],
+    description: [
+      "Performed Finite Element Analysis in NX to validate drivetrain components, ensuring stresses remained within acceptable Factor of Safety limits",
+      "",
+      "",
+    ],
   },
   {
     image: sep,
@@ -39,9 +44,9 @@ const experiences = [
     role: "Computer Science & Business",
     start: "Aug 2023",
     end: "May 2024",
-    description: "Transferred out after freshman year because I realized hardware was way cooler",
+    description:
+      "Transferred out after freshman year because I realized hardware was way cooler",
   },
-
 ];
 
 export default function HomePage() {
@@ -59,7 +64,9 @@ export default function HomePage() {
       <div className="w-full md:w-2/3 text-left space-y-4">
         <h1 className="text-2xl ">Hey, I'm Min!</h1>
         <p>
-          I'm a third year Mechanical Engineering student at the University of Southern California. My interests lie in sustainable energy, neurotech, and aerospace.
+          I'm a third year Mechanical Engineering student at the University of
+          Southern California. My interests lie in sustainable energy,
+          neurotech, and aerospace.
         </p>
         <h2 className="text-xl"></h2>
         <div className="divide-y divide-gray-300">

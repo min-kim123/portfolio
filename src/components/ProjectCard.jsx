@@ -6,7 +6,7 @@ export default function ProjectCard({
   link,
   picture,
   guide,
-  ware,
+  // ware,
 }) {
   return (
     <Link to={link}>
