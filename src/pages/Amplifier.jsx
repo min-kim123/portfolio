@@ -28,13 +28,9 @@ const overview = {
     "Nelson Pass Amp Camp components",
     "PCB (that we will make and order)",
     "Heat sink",
-    "Wood for chassis"
+    "Wood for chassis",
   ],
-  tools: [
-    "Soldering iron",
-    "Multimeter",
-    "Drill and bits",
-  ],
+  tools: ["Soldering iron", "Multimeter", "Drill and bits"],
 };
 
 function Step({ title, images = [], text, link, index }) {
@@ -91,7 +87,7 @@ export default function Amplifier() {
       <h1 className="text-3xl mb-3 text-left">Amplifier</h1>
       <div className="flex p-6">
         {/* Sidebar */}
-        <div className="w-1/4 pr-4 sticky top-6 h-fit">
+        <div className="hidden md:block w-1/4 pr-4 sticky top-6 h-fit">
           <nav className="flex flex-col space-y-2 text-left">
             {sections.map((section) => (
               <a
@@ -106,7 +102,7 @@ export default function Amplifier() {
         </div>
 
         {/* Main Content */}
-        <div className="w-3/4 space-y-12 text-left default-p-font">
+        <div className="w-full md:w-3/4 space-y-12 text-left default-p-font">
           {/* Overview */}
           <section id="overview" className="section-anchor">
             <h2 className="text-2xl mb-2">Overview</h2>

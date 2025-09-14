@@ -320,7 +320,7 @@ export default function ElectricGuitar() {
       <h1 className="text-3xl mb-3 text-left">Electric Guitar</h1>
       <div className="flex p-6">
         {/* Sidebar */}
-        <div className="w-1/4 pr-4 sticky top-6 h-fit">
+        <div className="hidden md:block w-1/4 pr-4 sticky top-6 h-fit">
           <nav className="flex flex-col space-y-2 text-left">
             {sections.map((section) => (
               <a
@@ -335,7 +335,7 @@ export default function ElectricGuitar() {
         </div>
 
         {/* Main Content */}
-        <div className="w-3/4 space-y-12 text-left default-p-font">
+        <div className="w-full md:w-3/4 space-y-12 text-left default-p-font">
           {/* Reflections */}
           {/* <section id="reflections" className="section-anchor">
             <h2 className="text-2xl mb-2">Reflections & Lessons Learned</h2>
