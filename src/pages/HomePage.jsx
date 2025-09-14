@@ -15,8 +15,10 @@ const experiences = [
     role: "Machinist",
     start: "May 2025",
     end: "Present",
-    description:
-      "Manufactured precision parts for the machine shop and USC FSAE using Bridgeport mills, including vise jaws, inboard brackets, clamps, and vise jaw stop plates. Used micrometers, test indicators, and edge finders to ensure precision in the thousandths",
+    description: [
+      "Manufactured precision parts for the machine shop and USC design teams using Bridgeport manual mill, lathe, and Haas CNC lathe",
+      "Ensured precision as high as ±0.0005; used bore gauges, micrometers, test indicators, and edge finders",
+    ],
   },
   {
     image: fe,
@@ -26,8 +28,10 @@ const experiences = [
     end: "Present",
     description: [
       "Performed Finite Element Analysis in NX to validate drivetrain components, ensuring stresses remained within acceptable Factor of Safety limits",
-      "",
-      "",
+      "Designed inboard bracket for a-arms, considering DFM principals and performing FEA in ANSYS",
+      "Integrated and routed brake lines, manufactured carbon fiber parts, assembled drivetrain components, including the motor, motor differential mounts, and eccentric rings, ensuring proper alignment and secure fit",
+      "Routed and assembled thermometers for each cell in the battery pack",
+      "Generated material cost report, ensured optimal material selection for performance and safety",
     ],
   },
   {
@@ -36,7 +40,10 @@ const experiences = [
     role: "Software & Product Engineer",
     start: "Aug 2024",
     end: "Present",
-    description: "",
+    description: [
+      "Led a 3-person team to develop a platform to connect patients with professional medical bill advocates with the ultimate goal of automating the entire medical bill negotiation process",
+      "Communicated with potential customers to validate product-market fit and improve user experience",
+    ],
   },
   {
     image: nyu,
@@ -44,8 +51,10 @@ const experiences = [
     role: "Computer Science & Business",
     start: "Aug 2023",
     end: "May 2024",
-    description:
+    description: [
+      "Studied Computer Science and Business fundamentals",
       "Transferred out after freshman year because I realized hardware was way cooler",
+    ],
   },
 ];
 

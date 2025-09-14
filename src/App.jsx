@@ -13,6 +13,7 @@ import Footer from "./components/Footer";
 import Memtiles from "./pages/Memtiles";
 import Netly from "./pages/Netly";
 import Amplifier from "./pages/Amplifier";
+import Advocare from "./pages/Advocare";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <Route path="/memtiles" element={<Memtiles />} />
         <Route path="/netly" element={<Netly />} />
         <Route path="/amp" element={<Amplifier />} />
+        <Route path="/advocare" element={<Advocare />} />
       </Routes>
       <Footer />
     </Router>

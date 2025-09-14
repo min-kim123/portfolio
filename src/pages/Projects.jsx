@@ -19,14 +19,6 @@ const projects = [
     ware: "hardware",
   },
   {
-    title: "Amplifier",
-    description: "Currently building an electric guitar amp!",
-    link: "/amp",
-    picture: pcb,
-    guide: false,
-    ware: "hardware",
-  },
-  {
     title: "Electric Guitar Pickup Winder",
     description:
       "Needed a way to wind copper coil thousands of times for the pickups.",
@@ -36,12 +28,32 @@ const projects = [
     ware: "hardware",
   },
   {
+    title: "Amplifier",
+    description: "Currently building an electric guitar amp!",
+    link: "/amp",
+    picture: pcb,
+    guide: true,
+    inProgress: false,
+    ware: "hardware",
+  },
+  {
     title: "Netly",
     description:
       "Social media for college clubs. Schedule coffee chats, apply to clubs, share fun events.",
     link: "/netly",
     picture: netlypicImg,
     guide: false,
+    blog: true,
+    ware: "software",
+  },
+  {
+    title: "Advocare",
+    description:
+      "Platform to connect patients with the best match medical bill advocate who can get their bills lowered. ",
+    link: "/advocare",
+    picture: advocareImg,
+    guide: false,
+    blog: true,
     ware: "software",
   },
   {
@@ -50,15 +62,6 @@ const projects = [
       "My first ever CS personal project! See what level you can get to:)",
     link: "/memtiles",
     picture: memtilesImg,
-    guide: false,
-    ware: "software",
-  },
-  {
-    title: "Advocare",
-    description:
-      "Platform to connect patients with the best match medical bill advocate who can get their bills lowered. ",
-    link: "/memtiles",
-    picture: advocareImg,
     guide: false,
     ware: "software",
   },
@@ -81,6 +84,8 @@ export default function Projects() {
                   link={project.link}
                   picture={project.picture}
                   guide={project.guide}
+                  blog={project.blog}
+                  inProgress={project.inProgress}
                   ware={project.ware}
                 />
               </div>

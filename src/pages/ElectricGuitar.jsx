@@ -1,3 +1,4 @@
+import guitar1 from "../assets/guitar1.jpeg";
 import lumbar from "../assets/guitar/lumbar.jpeg";
 import triangle from "../assets/guitar/triangle.jpeg";
 import glue from "../assets/guitar/glue.jpeg";
@@ -34,18 +35,20 @@ import copper from "../assets/guitar/copper.jpg";
 import electronics from "../assets/guitar/electronics.jpeg";
 import solder from "../assets/guitar/solder.jpeg";
 
+import cavityplate from "../assets/guitar/cavityplate.jpeg";
 // Sidebar section titles
 const sections = [
-  { id: "reflections", label: "Reflections" },
+  // { id: "reflections", label: "Reflections" },
   { id: "overview", label: "Overview" },
-  { id: "woodworking", label: "Woodworking" },
+  { id: "woodworking1", label: "Woodworking Pt. 1" },
   { id: "pickups", label: "Pickups" },
+  { id: "woodworking2", label: "Woodworking Pt. 2" },
   { id: "electronics", label: "Electronics" },
   { id: "finishing", label: "Finishing" },
 ];
 
-// Woodworking steps
-const woodworkingSteps = [
+// Woodworking Part 1 steps (1-15)
+const woodworkingSteps1 = [
   {
     title: "Go to local lumber store",
     images: [lumbar],
@@ -98,12 +101,12 @@ const woodworkingSteps = [
   {
     title: "Route neck pocket",
     images: [neckpocket],
-    text: "Trace the bottom of the neck onto a template and band saw/sand it out. Route the neck pocket until the neck (excluding frets) sticks out __.",
+    text: "Trace the bottom of the neck onto a template and band saw/sand it out. Route out the neck pocket.",
   },
   {
     title: "Mark bridge distance",
     images: [bridgedistance],
-    text: "Make sure the part where the string leaves the saddle is 25.5 inches away from the bottom edge of the nut. I had a hard time telling where the string left the nut, so I literally went to a guitar store, found a telecaster with the same bridge, and measured the distance from the top edge of the bridge to the nut. That distance turned out to be __. ",
+    text: "Make sure the part where the string leaves the saddle is 25.5 inches away from the bottom edge of the nut. I had a hard time telling where the string left the nut, so I literally went to a guitar store, found a telecaster with the same bridge, and measured the distance from the top edge of the bridge to the nut. ",
   },
   {
     title: "Drill body holes",
@@ -112,7 +115,7 @@ const woodworkingSteps = [
   },
   {
     title: "Create electronics cavity",
-    images: [papercavity, cavitycad, cavity],
+    images: [papercavity, cavitycad, cavity, cavityplate],
     text: "I cut out the shape i wanted for the cavity. I made it longer than necessary so that I would have less trouble drilling the pathway from the neck pocket all the way to the electronics cavity. I then imported the image into NX, sketched the shape in CAD, created another smaller drawing for the actual deep cavity with places for the screws. I then laser cut the templates, routed out both templates, and also used forstner bits to drill out the spots where the pots and the switch went. The hole on the far left was made to unearth the pathway from the neck pocket, through the neck pickup, and to the electronics cavity, since I drilled it a bit too deep. (I also messed up on drilling the bigger holes for the neck ferrules in the back, so I created a maple insert and redid it. ",
   },
   {
@@ -120,6 +123,10 @@ const woodworkingSteps = [
     images: [platehole],
     text: "Use a forstner bit to drill a hole for your output jack. ",
   },
+];
+
+// Woodworking Part 2 steps (16+)
+const woodworkingSteps2 = [
   {
     title: "Install Pickups",
     images: [],
@@ -196,6 +203,35 @@ const electronicsSteps = [
     title: "Result",
     images: [electronics],
     text: "This is how mine turned out! Make sure you cover the underside of the plate with copper tape as well.",
+  },
+];
+
+// Finishing steps
+const finishingSteps = [
+  {
+    title: "Sand and prepare surfaces",
+    images: [],
+    text: "Sand all surfaces to prepare for finishing. Start with coarser grits and work your way up to fine grits.",
+  },
+  {
+    title: "Apply finish",
+    images: [],
+    text: "Apply your chosen finish (stain, paint, or clear coat)!",
+  },
+  {
+    title: "Final assembly",
+    images: [],
+    text: "Once the finish is dry, it's time for final assembly! Screw in the tuning pegs, electronics cavity plate, and reinstall the neck!.",
+  },
+  {
+    title: "Setup and intonation",
+    images: [],
+    text: "Set up the guitar with proper string height, intonation, and truss rod adjustment for optimal playability.",
+  },
+  {
+    title: "You're done!!",
+    images: [guitar1],
+    text: "Congratulations! You've successfully built your own electric guitar from scratch. Happy playing:)",
   },
 ];
 
@@ -301,7 +337,7 @@ export default function ElectricGuitar() {
         {/* Main Content */}
         <div className="w-3/4 space-y-12 text-left default-p-font">
           {/* Reflections */}
-          <section id="reflections" className="section-anchor">
+          {/* <section id="reflections" className="section-anchor">
             <h2 className="text-2xl mb-2">Reflections & Lessons Learned</h2>
             <p className="mb-4"></p>
             <div className="space-y-4">
@@ -349,7 +385,7 @@ export default function ElectricGuitar() {
               </div>
             </div>
             <hr className="my-6" />
-          </section>
+          </section> */}
 
           {/* Overview */}
           <section id="overview" className="section-anchor">
@@ -370,11 +406,11 @@ export default function ElectricGuitar() {
             <hr className="my-6" />
           </section>
 
-          {/* Woodworking */}
-          <section id="woodworking" className="section-anchor">
-            <h2 className="text-2xl mb-2">Woodworking</h2>
+          {/* Woodworking Part 1 */}
+          <section id="woodworking1" className="section-anchor">
+            <h2 className="text-2xl mb-2">Woodworking Pt. 1</h2>
             <ol className="list-none space-y-6">
-              {woodworkingSteps.map((step, i) => (
+              {woodworkingSteps1.map((step, i) => (
                 <Step key={i} {...step} index={i} />
               ))}
             </ol>
@@ -386,6 +422,17 @@ export default function ElectricGuitar() {
             <h2 className="text-2xl mb-2">Pickups</h2>
             <ol className="list-none space-y-6">
               {pickupSteps.map((step, i) => (
+                <Step key={i} {...step} index={i} />
+              ))}
+            </ol>
+            <hr className="my-6" />
+          </section>
+
+          {/* Woodworking Part 2 */}
+          <section id="woodworking2" className="section-anchor">
+            <h2 className="text-2xl mb-2">Woodworking Pt. 2</h2>
+            <ol className="list-none space-y-6">
+              {woodworkingSteps2.map((step, i) => (
                 <Step key={i} {...step} index={i} />
               ))}
             </ol>
@@ -406,10 +453,11 @@ export default function ElectricGuitar() {
           {/* Finishing */}
           <section id="finishing" className="section-anchor">
             <h2 className="text-2xl mb-2">Finishing</h2>
-            <p>
-              Share takeaways, techniques used, and what you would improve next
-              time.
-            </p>
+            <ol className="list-none space-y-6">
+              {finishingSteps.map((step, i) => (
+                <Step key={i} {...step} index={i} />
+              ))}
+            </ol>
             <hr className="my-6" />
           </section>
         </div>

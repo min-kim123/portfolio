@@ -6,6 +6,8 @@ export default function ProjectCard({
   link,
   picture,
   guide,
+  blog,
+  inProgress,
   // ware,
 }) {
   return (
@@ -28,6 +30,16 @@ export default function ProjectCard({
               {guide && (
                 <span className="inline-block text-xs bg-blue-100 text-blue-600 px-2 py-1 rounded">
                   Guide
+                </span>
+              )}
+              {blog && (
+                <span className="inline-block text-xs bg-green-100 text-green-600 px-2 py-1 rounded">
+                  Blog
+                </span>
+              )}
+              {inProgress && (
+                <span className="inline-block text-xs bg-orange-100 text-orange-600 px-2 py-1 rounded">
+                  In Progress
                 </span>
               )}
               {/* {ware && (
