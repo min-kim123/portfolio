@@ -144,9 +144,9 @@ const windingSteps = [
     text: "Prepare the pickup bobbin and secure it to the spindle for winding.",
   },
   {
-    title: "If String Breaks",
+    title: "If Wire Breaks",
     images: [],
-    text: "Your string is likely to break while winding because it's just so thin. When it does, just tin both ends of the broken wire, then solder them together. You may have to sand the ends of the wire to get the tin to stick.",
+    text: "Your wire is likely to break while winding because it's just so thin. When it does, just tin both ends of the broken wire, then solder them together. You may have to sand the ends of the wire to get the tin to stick.",
   },
   {
     title: "Finished!",

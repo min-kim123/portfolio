@@ -1,4 +1,6 @@
 import guitar1 from "../assets/guitar1.jpeg";
+import neckTemplate from "../assets/guitar/NECK+fullsize+fat.pdf";
+import bodyTemplate from "../assets/guitar/Tele_body_drawing_revE.pdf";
 import lumbar from "../assets/guitar/lumbar.jpeg";
 import triangle from "../assets/guitar/triangle.jpeg";
 import glue from "../assets/guitar/glue.jpeg";
@@ -57,11 +59,12 @@ const woodworkingSteps1 = [
   {
     title: "Assemble Wood Blanks",
     images: [triangle, glue, allwood],
+    text: "Square the wood & orient the blocks when joining them so they don't warp",
   },
   {
     title: "Cut out body",
     images: [shaper, body],
-    text: "Cut the body with tools like a shaper and bandsaw. You can also make templates, stick them onto the wood, then use a router.Sand the sides to get rid of the burn marks.  ",
+    text: "Cut the body with tools like a Shaper Origin and bandsaw. You can also make templates, stick them onto the wood, then use a router.Sand the sides to get rid of the burn marks.  ",
   },
   {
     title: "Make fretboard",
@@ -96,7 +99,7 @@ const woodworkingSteps1 = [
   {
     title: "Insert frets & trim",
     images: [frets],
-    text: "Make sure that your holes are big enough and deep enough for the frets. Use a thin saw to make the slots the correct size. If you don't make them the correct size, you will have an extremely hard time getting the frets to lay in the slots correctly, and no amount of hammering will help. Trim the ends with a wire cutter, and sand the sharp edges.",
+    text: "Make sure that your holes are big enough and deep enough for the frets. Use a thin saw to make the slots the correct size. If you don't make them the correct size, you will have an extremely hard time getting the frets to lay in the slots correctly, and no amount of hammering will help. Trim the ends with a flush cut end nipper, and file the sharp edges down.",
   },
   {
     title: "Route neck pocket",
@@ -401,8 +404,29 @@ export default function ElectricGuitar() {
             <ListSection title="Tools I Used" items={overview.tools} />
             <p className="font-semibold mb-2">Templates</p>
             <p className="mb-4">
-              Here are the templates I used. I just found them online.
+              Here are the templates I used. I just found them online. Click to
+              download:
             </p>
+            <div className="space-y-2 mb-4">
+              <div className="flex items-center gap-2">
+                <a
+                  href={neckTemplate}
+                  download="NECK+fullsize+fat.pdf"
+                  className="text-blue-600 hover:text-blue-800 underline flex items-center gap-2"
+                >
+                  📄 Neck Template (PDF)
+                </a>
+              </div>
+              <div className="flex items-center gap-2">
+                <a
+                  href={bodyTemplate}
+                  download="Tele_body_drawing_revE.pdf"
+                  className="text-blue-600 hover:text-blue-800 underline flex items-center gap-2"
+                >
+                  📄 Telecaster Body Template (PDF)
+                </a>
+              </div>
+            </div>
             <hr className="my-6" />
           </section>
 
