@@ -46,16 +46,16 @@ const projects = [
     blog: true,
     ware: "software",
   },
-  {
-    title: "Advocare",
-    description:
-      "Platform to connect patients with the best match medical bill advocate who can get their bills lowered. ",
-    link: "/advocare",
-    picture: advocareImg,
-    guide: false,
-    blog: true,
-    ware: "software",
-  },
+  // {
+  //   title: "Advocare",
+  //   description:
+  //     "Platform to connect patients with the best match medical bill advocate who can get their bills lowered. ",
+  //   link: "/advocare",
+  //   picture: advocareImg,
+  //   guide: false,
+  //   blog: true,
+  //   ware: "software",
+  // },
   {
     title: "Memory Tiles",
     description:
