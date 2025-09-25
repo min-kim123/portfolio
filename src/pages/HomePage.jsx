@@ -16,8 +16,8 @@ const experiences = [
     start: "May 2025",
     end: "Present",
     description: [
-      "Manufactured precision parts for the machine shop and USC design teams using Bridgeport manual mill, lathe, and Haas CNC lathe",
-      "Ensured precision as high as ±0.0005; used bore gauges, micrometers, test indicators, and edge finders",
+      "Manufactured precision parts for the machine shop and various USC design teams using Bridgeport manual mill, lathe, and Haas CNC lathe",
+      "Ensured precision as high as ±0.0005” (0.0127mm); used bore gauges, micrometers, test indicators, and edge finders",
     ],
   },
   {
@@ -27,10 +27,9 @@ const experiences = [
     start: "Aug 2024",
     end: "Present",
     description: [
-      "Performed Finite Element Analysis in NX to validate drivetrain components, ensuring stresses remained within acceptable Factor of Safety limits",
+      "Determined optimal process for manufacturing a-arm tubes, removing steps and cutting down machining time",
       "Designed inboard bracket for a-arms, considering DFM principals and performing FEA in ANSYS",
       "Integrated and routed brake lines, manufactured carbon fiber parts, assembled drivetrain components, including the motor, motor differential mounts, and eccentric rings, ensuring proper alignment and secure fit",
-      "Routed and assembled thermometers for each cell in the battery pack",
       "Generated material cost report, ensured optimal material selection for performance and safety",
     ],
   },
@@ -74,8 +73,8 @@ export default function HomePage() {
         <h1 className="text-2xl ">Hey, I'm Min!</h1>
         <p>
           I'm a third year Mechanical Engineering student at the University of
-          Southern California. My interests lie in sustainable energy,
-          neurotech, and aerospace.
+          Southern California. I have experience in hardware, software,
+          machining, and electronics. Feel free to reach out about anything!
         </p>
         <h2 className="text-xl"></h2>
         <div className="divide-y divide-gray-300">
