@@ -43,7 +43,7 @@ const projects = [
     link: "/netly",
     picture: netlypicImg,
     guide: false,
-    blog: true,
+    blog: false,
     ware: "software",
   },
   // {
