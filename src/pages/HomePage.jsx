@@ -16,8 +16,8 @@ const experiences = [
     start: "May 2025",
     end: "Present",
     description: [
-      "Manufactured precision parts for the machine shop and various USC design teams using Bridgeport manual mill, lathe, and Haas CNC lathe",
-      "Ensured precision as high as ±0.0005” (0.0127mm); used bore gauges, micrometers, test indicators, and edge finders",
+      "Manufactured precision parts for various USC design teams using Bridgeport & Haas CNC mill and lathe",
+      "Ensured precision as high as ±0.0005 in (0.0127 mm); used bore gauges, micrometers, test indicators, and edge finders",
     ],
   },
   {
@@ -27,10 +27,11 @@ const experiences = [
     start: "Aug 2024",
     end: "Present",
     description: [
-      "Determined optimal process for manufacturing a-arm tubes, removing steps and cutting down machining time",
-      "Designed inboard bracket for a-arms, considering DFM principals and performing FEA in ANSYS",
+      "Designed and machined full suspension subassembly, including A-arm tubes, A-arm jig, weld cups, inboard brackets, and gussets, using NX (CAD/DFM), MasterCAM for G-code, and ANSYS for FEA",
+      "Optimized process for manufacturing a-arm tubes, removing steps and cutting down machining time by 30%",
+      "Created 20+ part drawings in NX, fully defining geometry and ensuring clarity for manufacturing",
       "Integrated and routed brake lines, manufactured carbon fiber parts, assembled drivetrain components, including the motor, motor differential mounts, and eccentric rings, ensuring proper alignment and secure fit",
-      "Generated material cost report, ensured optimal material selection for performance and safety",
+      "Generated material cost report and ensured optimal material selection for performance and safety",
     ],
   },
   {

@@ -14,6 +14,7 @@ import Memtiles from "./pages/Memtiles";
 import Netly from "./pages/Netly";
 import Amplifier from "./pages/Amplifier";
 import Advocare from "./pages/Advocare";
+import Brackets from "./pages/Brackets";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
         <Route path="/netly" element={<Netly />} />
         <Route path="/amp" element={<Amplifier />} />
         <Route path="/advocare" element={<Advocare />} />
+        <Route path="/brackets" element={<Brackets />} />
       </Routes>
       <Footer />
     </Router>

@@ -7,8 +7,19 @@ import guitar from "../assets/guitar1.jpeg";
 import pcb from "../assets/pcb1.png";
 // import schematic from "../assets/schematic.png";
 import pickupwinder from "../assets/pickupwinder.png";
+// import bracketsImg from "../assets/brackets/bracket1.jpeg";
 
 const projects = [
+  {
+    title: "Brackets",
+    description:
+      "Design and manufacturing of custom brackets for Formula SAE Electric.",
+    link: "/brackets",
+    picture: guitar, // Placeholder - replace with bracketsImg when available
+    guide: false,
+    blog: false,
+    ware: "hardware",
+  },
   {
     title: "Electric Guitar",
     description:
