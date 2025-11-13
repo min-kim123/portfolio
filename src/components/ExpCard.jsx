@@ -8,7 +8,7 @@ export default function ExpCard({
 }) {
   return (
     <div className="py-6">
-      <div className="flex flex-col md:flex-row gap-4 transform transition duration-200 hover:scale-[0.99] cursor-pointer">
+      <div className="flex flex-col md:flex-row gap-4">
         {/* Image */}
         <img src={image} className="w-12 h-12 object-cover rounded-md" />
 

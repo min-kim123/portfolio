@@ -14,6 +14,8 @@ import Memtiles from "./pages/Memtiles";
 import Netly from "./pages/Netly";
 import Amplifier from "./pages/Amplifier";
 import Advocare from "./pages/Advocare";
+import Fixtures from "./pages/Fixtures";
+import ProjectBuilder from "./pages/ProjectBuilder";
 
 function App() {
   return (
@@ -29,6 +31,8 @@ function App() {
         <Route path="/netly" element={<Netly />} />
         <Route path="/amp" element={<Amplifier />} />
         <Route path="/advocare" element={<Advocare />} />
+        <Route path="/inboard-brackets" element={<Fixtures />} />
+        <Route path="/project-builder" element={<ProjectBuilder />} />
       </Routes>
       <Footer />
     </Router>

@@ -7,8 +7,17 @@ import guitar from "../assets/guitar1.jpeg";
 import pcb from "../assets/pcb1.png";
 // import schematic from "../assets/schematic.png";
 import pickupwinder from "../assets/pickupwinder.png";
+import overviewImg from "../assets/a-arm/overview.jpg";
 
 const projects = [
+  {
+    title: "Formula SAE Suspension",
+    description: "Custom machined brackets and tabs for precision applications.",
+    link: "/inboard-brackets",
+    picture: overviewImg,
+    guide: false,
+    ware: "hardware",
+  },
   {
     title: "Electric Guitar",
     description:
@@ -65,6 +74,15 @@ const projects = [
     guide: false,
     ware: "software",
   },
+  // {
+  //   title: "A",
+  //   description:
+  //     "My first ever CS personal project! See what level you can get to:)",
+  //   link: "/a",
+  //   picture: memtilesImg,
+  //   guide: false,
+  //   ware: "software",
+  // },
 ];
 
 export default function Projects() {

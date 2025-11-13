@@ -16,18 +16,18 @@ const experiences = [
     start: "May 2025",
     end: "Present",
     description: [
-      "Manufactured precision parts for various USC design teams using Bridgeport & Haas CNC mill and lathe",
-      "Ensured precision as high as ±0.0005 in (0.0127 mm); used bore gauges, micrometers, test indicators, and edge finders",
+      "Manufactured steel and aluminum precision parts for USC design teams using Bridgeport manual & Haas CNC mill and lathe, programmed on the Prototrak",
+      "Ensured precision as high as ±0.0005 in (0.0127 mm); used micrometers, bore gauges, test indicators, and edge finders",
     ],
   },
   {
     image: fe,
-    company: "Formula SAE Electric",
+    company: "Vehicle Dynamics Engineer & Machinist",
     role: "Engineer",
     start: "Aug 2024",
     end: "Present",
     description: [
-      "Designed and machined full suspension subassembly, including A-arm tubes, A-arm jig, weld cups, inboard brackets, and gussets, using NX (CAD/DFM), MasterCAM for G-code, and ANSYS for FEA",
+      "Designed and machined full suspension subassembly, including A-arm tubes, A-arm jig, weld cups, inboard brackets, tabs, and gussets, using NX for CAD, ANSYS for FEdoA, and performing hand calculations",
       "Optimized process for manufacturing a-arm tubes, removing steps and cutting down machining time by 30%",
       "Created 20+ part drawings in NX, fully defining geometry and ensuring clarity for manufacturing",
       "Integrated and routed brake lines, manufactured carbon fiber parts, assembled drivetrain components, including the motor, motor differential mounts, and eccentric rings, ensuring proper alignment and secure fit",
