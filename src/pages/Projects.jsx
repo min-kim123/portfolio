@@ -12,7 +12,7 @@ import overviewImg from "../assets/a-arm/overview.jpg";
 const projects = [
   {
     title: "Formula SAE Suspension",
-    description: "Custom machined brackets and tabs for precision applications.",
+    description: "Designing/machining various suspension components.",
     link: "/inboard-brackets",
     picture: overviewImg,
     guide: false,
