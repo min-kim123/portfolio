@@ -27,7 +27,7 @@ const experiences = [
     start: "Aug 2024",
     end: "Present",
     description: [
-      "Designed and machined full suspension subassembly, including A-arm tubes, A-arm jig, weld cups, inboard brackets, tabs, and gussets, using NX for CAD, ANSYS for FEdoA, and performing hand calculations",
+      "Designed and machined full suspension subassembly, including A-arm tubes, A-arm jig, weld cups, inboard brackets, tabs, and gussets, using NX for CAD, ANSYS for FEA, and performing hand calculations",
       "Optimized process for manufacturing a-arm tubes, removing steps and cutting down machining time by 30%",
       "Created 20+ part drawings in NX, fully defining geometry and ensuring clarity for manufacturing",
       "Integrated and routed brake lines, manufactured carbon fiber parts, assembled drivetrain components, including the motor, motor differential mounts, and eccentric rings, ensuring proper alignment and secure fit",
