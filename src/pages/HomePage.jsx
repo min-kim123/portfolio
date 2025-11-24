@@ -22,8 +22,8 @@ const experiences = [
   },
   {
     image: fe,
-    company: "Vehicle Dynamics Engineer & Machinist",
-    role: "Engineer",
+    company: "Formula SAE Electric",
+    role: "Vehicle Dynamics Engineer",
     start: "Aug 2024",
     end: "Present",
     description: [
